@@ -1,0 +1,31 @@
+1.Create data base(sql) 
+    root password = 0801194904
+
+2.Backend(api)
+    express → สร้าง API
+    mysql2 → เชื่อม MySQL
+    sequelize → จัดการ database
+    bcrypt → hash password 
+    jsonwebtoken → ทำ login token (skiped)
+    
+    Create Models
+        user-api
+        restaurant-api
+        menu-api 
+        order-api 
+        order_detail-api
+
+
+3.Feature <-- we are here
+4.FrontEnd
+
+Needed Library
+{
+    npm install 
+    npm install express
+    npm install sequelize
+    npm install mysql2
+    npm install bcrypt
+    npm install cors
+    npm install dotenv
+}
