@@ -1,7 +1,8 @@
 const express = require("express");
+require("dotenv").config();
 const app = express();
 
-const port = 3000
+const port = process.env.PORT
 const User = require("./models/User.js");
 const Restaurant = require("./models/Restaurant");
 const { Order, OrderDetail, Menu } = require("./models");
