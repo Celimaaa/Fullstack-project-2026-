@@ -12,7 +12,7 @@ const OrderDetail = sequelize.define("OrderDetail", {
   quantity: DataTypes.INTEGER,
   price: DataTypes.DECIMAL(10,2)
 }, {
-  tableName: "ORDER_DETAILS",
+  tableName: "order_details",
   timestamps: false
 });
 

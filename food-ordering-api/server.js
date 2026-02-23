@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 
+const port = 3000
 const User = require("./models/User.js");
 const Restaurant = require("./models/Restaurant");
 const Menu = require("./models/Menu");
@@ -13,8 +14,8 @@ app.get("/", (req, res) => {
   res.send("Food Ordering API Running");
 });
 
-app.listen(3000, () => {
-  console.log("Server running on port 3000");
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
 
 // DataBase
@@ -24,7 +25,7 @@ sequelize.authenticate()
 .catch(err => console.error("Database connection failed:", err));
 
 // Models
-// USER
+// User
 app.get("/users", async (req, res) => {
   const users = await User.findAll();
   res.json(users);

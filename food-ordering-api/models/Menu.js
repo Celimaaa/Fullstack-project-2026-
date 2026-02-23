@@ -20,7 +20,7 @@ const Menu = sequelize.define("Menu", {
     defaultValue: "available"
   }
 }, {
-  tableName: "MENU",
+  tableName: "menu",
   timestamps: false
 });
 

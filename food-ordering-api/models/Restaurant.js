@@ -17,7 +17,7 @@ const Restaurant = sequelize.define("Restaurant", {
     type: DataTypes.STRING
   },
 }, {
-  tableName: "RESTAURANTS",
+  tableName: "restaurants",
   timestamps: false
 });
 
