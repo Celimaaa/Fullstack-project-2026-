@@ -1,6 +1,7 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 
+
 const Order = sequelize.define("Order", {
   order_id: {
     type: DataTypes.INTEGER,
@@ -23,7 +24,5 @@ const Order = sequelize.define("Order", {
   tableName: "orders",
   timestamps: false
 });
-    
-Order.hasMany(require("./OrderDetail"), {foreignKey: "order_id"});
 
 module.exports = Order;

@@ -7,15 +7,19 @@ const OrderDetail = sequelize.define("OrderDetail", {
     autoIncrement: true,
     primaryKey: true
   },
-  order_id: DataTypes.INTEGER,
-  menu_id: DataTypes.INTEGER,
+  order_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
+  menu_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false
+  },
   quantity: DataTypes.INTEGER,
   price: DataTypes.DECIMAL(10,2)
 }, {
   tableName: "order_details",
   timestamps: false
 });
-
-OrderDetail.belongsTo(require("./Menu"), {foreignKey: "menu_id"});
 
 module.exports = OrderDetail;

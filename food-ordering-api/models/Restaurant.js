@@ -2,12 +2,12 @@ const { DataTypes } = require("sequelize");
 const sequelize = require("../config/database");
 
 const Restaurant = sequelize.define("Restaurant", {
-  Restaurant_id: {
+  restaurant_id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     primaryKey: true
   },
-  Restaurant_name: {
+  restaurant_name: {
     type: DataTypes.STRING
   },
   address: {
